@@ -9,3 +9,7 @@ body {
 .navBarImgs {
   height: 30px;
 }
+
+#badIcon {
+  text-decoration: none;
+}
