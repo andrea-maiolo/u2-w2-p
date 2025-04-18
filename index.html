@@ -20,26 +20,31 @@
                 <a class="navbar-brand" href="#">
                     <img src="assets/media/netflix_logo.png" class="navBarImgs" alt="Netflix Logo">
                 </a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">TV Shows</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Movies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Recently Added</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">My List</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler me-2 me-sm-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="firstNav" aria-expanded="true">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="firstNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link secondText" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">TV Shows</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondText" href="#">Movies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondText" href="#">Recently Added</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link secondText" href="#">My List</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-
-            <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center m-2">
                 <a href="#" class="text-white me-3"><i class="bi bi-search"></i></a>
                 <a href="#" class="me-3"><img class="navBarImgs" src="./assets/media/kids_icon.png"
                         alt="kids image"></a>
@@ -55,22 +60,22 @@
         </nav>
 
         <!-- filters -->
-        <div class="row align-items-center">
-            <div class=" d-flex align-items-center col-4">
+        <div class="row align-items-center mt-3 g-sm-3">
+            <div class="col-lg-3 col-md-4 col-12">
                 <h1 class="text-white me-5">TV Shows</h1>
-                <div class="dropdown">
-                    <button class="btn text-white border border-white dropdown-toggle rounded-0" type="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Genres
-                    </button>
-                    <ul class="dropdown-menu bg-dark">
-                        <li><a class="dropdown-item text-white" href="#">TV Shows</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Movies</a></li>
-                        <li><a class="dropdown-item text-white" href="#">Documentaries</a></li>
-                    </ul>
-                </div>
             </div>
-            <div class="col-4 offset-4 text-end">
+            <div class="col-lg-3 col-md-4 col-12 dropdown">
+                <button class="btn text-white border border-white dropdown-toggle rounded-0" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Genres
+                </button>
+                <ul class="dropdown-menu bg-dark">
+                    <li><a class="dropdown-item text-white" href="#">TV Shows</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Movies</a></li>
+                    <li><a class="dropdown-item text-white" href="#">Documentaries</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-4 col-12 offset-lg-3 text-md-end text-lg-end text-xl-end text-xxl-end">
                 <a href="#" id="badIcon" class="text-white fs-6 border py-1 px-2">
                     <i class="bi bi-list"></i>
                 </a>
@@ -80,49 +85,50 @@
             </div>
         </div>
 
+
         <!-- movies section -->
         <div class="row mt-5">
-            <div class="col-12 mb-3">
+            <div class="col-lg-12 mb-3">
                 <h4 class="text-white">Trending Now</h4>
             </div>
 
-            <div class="col-12 row g-0">
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media0.webp" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media1.jpg" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media2.webp" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media3.webp" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media4.jpg" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media5.webp" alt="movie image"></div>
+            <div class="col-lg-12 row g-0">
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media0.webp" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media1.jpg" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media2.webp" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media3.webp" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media4.jpg" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media5.webp" alt="movie image"></div>
             </div>
         </div>
 
         <div class="row mt-5">
-            <div class="col-12 mb-3">
+            <div class="col-lg-12 mb-3">
                 <h4 class="text-white">Watch It Again</h4>
             </div>
 
-            <div class="col-12 row g-0">
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media6.jpg" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media7.webp" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media8.webp" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media9.jpg" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media10.jpg" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media11.jpg" alt="movie image"></div>
+            <div class="col-lg-12 row g-0">
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media6.jpg" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media7.webp" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media8.webp" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media9.jpg" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media10.jpg" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media11.jpg" alt="movie image"></div>
             </div>
         </div>
 
         <div class="row mt-5">
-            <div class="col-12 mb-3">
+            <div class="col-lg-12 mb-3">
                 <h4 class="text-white">New Releases</h4>
             </div>
 
-            <div class="col-12 row g-0">
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media12.jpg" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media13.jpg" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media14.webp" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media15.jpg" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media16.webp" alt="movie image"></div>
-                <div class="col-2"><img class="img-fluid" src="./assets/media/media17.jpg" alt="movie image"></div>
+            <div class="col-lg-12 row g-0">
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media12.jpg" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media13.jpg" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media14.webp" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media15.jpg" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media16.webp" alt="movie image"></div>
+                <div class="col-lg-2"><img class="img-fluid" src="./assets/media/media17.jpg" alt="movie image"></div>
             </div>
         </div>
 
@@ -139,39 +145,39 @@ Extra extra large	xxl	≥1400px -->
         <footer>
             <div class="container w-75 mt-5">
                 <div class="row">
-                    <div class="col-12 mb-3">
-                        <i class="bi bi-facebook text-secondary"></i>
-                        <i class="bi bi-instagram text-secondary"></i>
-                        <i class="bi bi-twitter text-secondary"></i>
-                        <i class="bi bi-youtube text-secondary"></i>
+                    <div class="col-lg-12 mb-3">
+                        <i class="bi bi-facebook secondText"></i>
+                        <i class="bi bi-instagram secondText"></i>
+                        <i class="bi bi-twitter secondText"></i>
+                        <i class="bi bi-youtube secondText"></i>
                     </div>
-                    <div class="col-12 text-secondary  mb-3 row">
-                        <div class="col-3">
+                    <div class="col-lg-12 secondText  mb-3 row">
+                        <div class="col-lg-3">
                             <p>Audio and Subtitles</p>
                             <p>Media Center</p>
                             <p>Privacy</p>
                             <p>Contact Us</p>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3">
                             <p>Audio Description</p>
                             <p>Investor Relations</p>
                             <p>Legal Notices</p>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3">
                             <p>Help Center</p>
                             <p>Jobs</p>
                             <p>Cookie Preferences</p>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3">
                             <p>Gift Cards</p>
                             <p>Terms of Use</p>
                             <p>Corporate Information</p>
                         </div>
                     </div>
-                    <div class="col-12  mb-3">
-                        <button class="btn rounded-0 border-white text-secondary" type="button">Service Code</button>
+                    <div class="col-lg-12  mb-3">
+                        <button class="btn rounded-0 border-white secondText" type="button">Service Code</button>
                     </div>
-                    <div class="col-12 text-secondary mb-3">
+                    <div class="col-lg-12 secondText mb-3">
                         <p class="copy">&copy; 2025 Netflix Clone. All rights reserved.</p>
                     </div>
 

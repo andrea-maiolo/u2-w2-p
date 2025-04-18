@@ -1,3 +1,8 @@
+:root {
+  --second-text: #818181;
+  --small-unit: 0.8rem;
+}
+
 h1,
 h2,
 h3,
@@ -10,6 +15,10 @@ p {
 
 body {
   background-color: #141414;
+}
+
+.secondText {
+  color: var(--second-text);
 }
 
 .container {
@@ -25,7 +34,7 @@ body {
 }
 
 .copy {
-  font-size: small;
+  font-size: var(--small-unit);
 }
 
 .logoProfile {
